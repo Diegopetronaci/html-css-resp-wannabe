@@ -72,12 +72,36 @@ img {
   clear: both;
 }
 
-@media screen and (max-width 420px){
+@media screen and (max-width: 420px) {
+
   *{
-    padding: 0;
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
   }
 
+  body{
+    background-color: #f2f2cd;
+  }
 
+  .row{
+    width: 420px;
+  }
+
+  #lezioni .row>.left, #lezioni .row>.right {
+    width: 100%;
+    float: left;
+    padding: 2%;
+  }
+
+  #steps .row>.left, #steps .row>.central, #steps .row>.right {
+    float: left;
+    width: 100%;
+    padding: 2%;
+  }
+
+  #lezioni .row, #why .row{
+    background-color: #f2f2cd;
+    padding: 2%;
+  }
 }
